@@ -1,27 +1,56 @@
-/* Outdated CSS */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #cccccc;
+    text-align: center;
+    padding: 20px;
 }
 
 h1 {
     margin: 0;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
+nav {
+    background-color: #333333;
 }
 
-li {
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 10px;
     margin: 0;
-    padding: 0;
 }
 
-p {
-    margin: 0;
-    padding: 0;
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #555555;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    flex: 1;
+}
+
+main section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 img {
@@ -29,7 +58,8 @@ img {
     height: auto;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+.footer {
+    background-color: #cccccc;
+    text-align: center;
+    padding: 10px;
 }
